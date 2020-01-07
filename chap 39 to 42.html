@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var linux = parseInt(prompt("Enter your Linux Marks"));
+var Docker = parseInt(prompt("Enter your Docker Marks"));
+var Kubernetes = parseInt(prompt("Enter your Kubernetes Marks"));
+var HTMLCss = parseInt(prompt("Enter your HTMLCss Marks"));
+var Java = parseInt(prompt("Enter your Java Marks"));
+
+var TotalMarks = linux + Docker + Kubernetes + HTMLCss + Java;
+
+var Percentage = TotalMarks / 500 * 100;
+var grade;
+
+switch (true) {
+    case (90<=Percentage && Percentage<=100):
+    grade = "A+";
+    break;
+    case (75<=Percentage && Percentage<=89):
+    grade = "A";
+    break;
+    case (60<=Percentage && Percentage<=74):
+    grade = "B";
+    break;
+    case (45<=Percentage && Percentage<=59):
+    grade = "C";
+    break;
+    case (30<=Percentage && Percentage<=44):
+    grade = "D";
+    break;
+    default:
+    grade = "F";
+}
+ TotalMarks = TotalMarks.toString ();
+ Percentage = Percentage.toString ();
+ 
+        alert("Total marks : " +TotalMarks + ", " + "Percentage : " +Percentage + ", " + "Grade : " +grade);
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

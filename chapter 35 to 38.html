@@ -1,0 +1,26 @@
+<html>
+<head>
+ <script>
+     
+var input=prompt("Input Your Data");
+
+function capitalizeValue(input){
+ var splitInput=input.split(" ");
+
+ var spaceEnd="";
+
+ var space=" ";
+ 
+ for (var i=0; i<splitInput.length; i++){
+ spaceEnd+= splitInput[i].charAt(0).toUpperCase() + splitInput[i].slice(1).toLowerCase() + space;
+ }
+
+ return spaceEnd; 
+}
+
+var result=capitalizeValue(input);
+
+alert(result);
+
+    </script>
+</head>

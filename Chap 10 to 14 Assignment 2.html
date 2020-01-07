@@ -1,0 +1,24 @@
+<html>
+    <head>
+        Chap 10 to 14 Assignment 2
+    </head>
+    <script>
+        var Linux = +prompt("Enter your Linux Paper Marks");
+        var Docker = +prompt("Enter your Docker Paper Marks");
+        var Kubernetes = +prompt("Enter your Kubernetes Paper Marks");
+        var Htmlcss = +prompt("Enter your HTML & CSS Paper Marks");
+        var Javascript = +prompt("Enter your Javascript Paper Marks");
+        var TotalMarks = 500;
+        var ObtainedMarks = Linux + Docker + Kubernetes + Htmlcss + Javascript;
+        console.log(ObtainedMarks);
+
+        var Percentage = (ObtainedMarks * 100 / TotalMarks);
+        
+        ObtainedMarks = ObtainedMarks.toString()
+        Percentage = Percentage.toString()
+        alert("Total Marks Obtained = " + ObtainedMarks + " " + "Total Percentage = " + Percentage);
+        </script>
+    
+    <body>
+    </body>
+</html>
